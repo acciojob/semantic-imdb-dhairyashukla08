@@ -1,24 +1,144 @@
 <!DOCTYPE html>
-
-<html>
-
+<html lang="en">
 <head>
-	<link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inception - Movie Info</title>
+    <style>
+        body {
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #1a1a1a;
+            color: #ffffff;
+        }
+
+        header {
+            background-color: #000000;
+            color: #4CAF50; /* A pop of color */
+            padding: 20px;
+            text-align: center;
+            border-bottom: 3px solid #4CAF50;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+            letter-spacing: 2px;
+        }
+
+        nav {
+            background-color: #333333;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: #ffffff;
+            text-decoration: none;
+            font-weight: bold;
+            padding: 5px 10px;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        nav ul li a:hover {
+            background-color: #4CAF50;
+            color: #000000;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 20px auto;
+            padding: 0 20px;
+        }
+
+        section, aside {
+            background-color: #2b2b2b;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+        }
+
+        section h2, aside h2 {
+            color: #4CAF50;
+            border-bottom: 2px solid #555;
+            padding-bottom: 5px;
+            margin-top: 0;
+        }
+
+        #summary p {
+            line-height: 1.6;
+        }
+
+        #actor ul {
+            list-style: disc;
+            margin-left: 20px;
+        }
+        
+        #actor li {
+            margin-bottom: 10px;
+        }
+
+        #quote blockquote {
+            font-style: italic;
+            border-left: 5px solid #4CAF50;
+            padding-left: 15px;
+            margin: 15px 0;
+            background-color: #3a3a3a;
+            padding: 15px;
+            border-radius: 4px;
+        }
+
+        #quote p {
+            text-align: right;
+            margin-top: -10px;
+            font-weight: bold;
+        }
+
+        aside {
+            float: right;
+            width: 250px;
+            margin-left: 20px;
+        }
+
+        footer {
+            clear: both;
+            background-color: #000000;
+            color: #999999;
+            text-align: center;
+            padding: 15px;
+            border-top: 3px solid #4CAF50;
+            font-size: 0.9em;
+        }
+    </style>
 </head>
-
 <body>
-	<!-- the entire body must be written by student -->
 
-	<header>
+    <header>
         <h1>Inception</h1>
     </header>
-	<nav>
+
+    <nav>
         <ul>
             <li><a id="nav-actor" href="#actor">The Team (Actors)</a></li>
             <li><a id="nav-quote" href="#quote">Favorite Quote</a></li>
         </ul>
     </nav>
-	<div class="container">
+
+    <div class="container">
         <section id="summary">
             <h2>Plot Summary</h2>
             <p><strong>Inception</strong> is a mind-bending science fiction action film that follows Dominic Cobb, a skilled thief who specializes in the dangerous art of **extraction**, stealing valuable secrets from deep within the subconscious during the dream state, when the mind is most vulnerable. Cobb is offered a chance at redemption: his final job is not to steal an idea, but to plant one—a process called **inception**. To succeed, he must assemble a specialized team and descend through multiple layers of a shared dreamscape, all while battling his own tormented past and the projections of his deceased wife, Mal, who haunts his subconscious mind.</p>
@@ -55,12 +175,10 @@
         </section>
 
     </div>
-	<footer>
+
+    <footer>
         Produced by: Emma Thomas & Christopher Nolan
     </footer>
-    <script type="text/javascript" src="./script.js">
-</script>
 
 </body>
-
 </html>
